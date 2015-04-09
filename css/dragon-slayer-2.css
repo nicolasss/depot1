@@ -1,0 +1,65 @@
+h1{
+	text-align: center;
+}
+select{
+	display: block;
+}
+
+td{
+	width: 50px;
+	height: 50px;
+}
+
+table{
+	margin: 0 auto;
+	margin-bottom: 50px; 
+}
+
+.empty{
+	background-color: white;
+}
+
+.wall{
+	background-color: grey;
+}
+
+.water{
+	background-color: blue;
+}
+
+.treasure{
+	background-color: gold;
+}
+
+.dragon{
+	background-color: red;
+}
+
+.positionPlayer{
+	background-color: black;
+}
+
+
+
+img{
+	width: 200px;
+}
+
+aside{
+	display: none;
+}
+
+aside>div{
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 50px;
+}
+
+textarea{
+	display: block;
+	margin: 0 auto;
+}
+
+aside h1{
+	display: none;
+}

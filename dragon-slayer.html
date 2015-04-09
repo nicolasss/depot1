@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Dragon Slayer 2 !!</title>
+    <!-- <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Indie+Flower">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans"> -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/dragon-slayer-2.css">
+    <!-- <link rel="stylesheet" href="css/ui.css"> -->
+
+    <!-- Librairie jQuery -->
+
+    <!-- Classes du jeu (code orienté objet) -->
+
+    <!-- Données du jeu -->
+
+    <!-- Fonctions utilitaires (code procédural) -->
+</head>
+<body>
+    <main>
+        <h1>ᛗ Dragon Slayer II</h1>
+
+        <!-- Titre du jeu -->
+        <!-- <h2 id="js-ui-game-title" class="game-block ui-game-title">La version jQuery et orientée objet ;-)</h2> -->
+
+        <!-- Menu de démarrage du jeu -->
+        <form id="js-ui-game-menu" class="game-block hide ui-game-menu">
+            <fieldset>
+                <legend>Menu de démarrage</legend>
+                <!-- Champ texte player-nick-name pour saisir son pseudo -->
+                <!-- Liste déroulante player-class pour sélectionner la classe du joueur -->
+                <!-- Boutons radio difficulty pour sélectionner le niveau de difficulté -->
+                <!-- Bouton js-game-start pour soumettre le formulaire -->
+                
+                <label for="nickName">Nickname ? : </label>
+                <input type="text" name="nickName" id="nickName">
+                
+                <select name="classePlayer">
+                    <option value="paladin" selected>Paladin</option> 
+                    <option value="wizard" >Wizard</option>
+                    <option value="thief">Thief</option>
+                </select>
+                
+                <div id="difficultySection">
+                    <label for="difficultyEasy">Easy</label>
+                    <input type="radio" name="difficulty" title="easy" id="difficultyEasy" >
+
+                    <label for="difficultyMedium">Medium</label>
+                    <input type="radio" name="difficulty" title="medium" id="difficultyMedium" checked>
+
+                    <label for="difficultyHard">Hard</label>
+                    <input type="radio" name="difficulty" title="hard" id="difficultyHard">
+                </div>
+
+                <button type="button" name="startButton" id="startGameButton">Start game</button>
+
+            </fieldset>
+
+        </form>
+        
+        <section>
+            <table></table>
+            
+            <aside> 
+                <div>          
+                    <div>
+                        <img src="images/chevalier.jpg" alt="chevalier">
+                        <p id="playerEquipment">Equipment: your bare hands</p>
+                        <p id="lifePlayer">life: </p>
+                    </div>
+
+                     <p>VS</p>
+
+                    <div>
+                        <img src="images/dragon.jpg" alt="dragon">
+                        <p id="lifeDragon">life: </p>
+                    </div>
+                </div>
+
+                <textarea name="fightDetails" cols="30" rows="10"></textarea>
+                <h1></h1>
+            </aside>
+
+        </section>
+
+    </main>
+    
+    <script type="text/javascript" src="js/jQuery.js"></script>
+    <script type="text/javascript" src="js/classes/Dragon.class.js"></script>
+    <script type="text/javascript" src="js/classes/Game.class.js"></script>
+    <script type="text/javascript" src="js/classes/Map.class.js"></script>
+    <script type="text/javascript" src="js/classes/Player.class.js"></script>
+    <script type="text/javascript" src="js/dragon-slayer-data.js"></script>
+    <script type="text/javascript" src="js/utilities.js"></script>
+    <script type="text/javascript" src="js/dragon-slayer.js"></script>
+</body>
+</html>
